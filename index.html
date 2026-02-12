@@ -67,7 +67,7 @@
             <legend>License Information</legend>
 
             <label for="license">Driver License Number:</label>
-            <input type="text" name="license" id="license"  pattern="[a-zA-Z]+([\s][a-zA-Z]+)*" required>
+            <input type="text" name="license" id="license" required>
             </fieldset>
 
             <!-- ADDITIONAL FIELDS -->
@@ -75,7 +75,7 @@
             <legend>Additional Preferences</legend>
 
             <label for="year">Preferred Model Year:</label>
-            <input type="number" name="year" id="year" placeholder="2024" >
+            <input type="number" name="year" id="year" placeholder="2024" min="1990" max="2025">
 
             <br><br>
 
@@ -106,3 +106,4 @@
   </div>
 </body>
 </html>
+
