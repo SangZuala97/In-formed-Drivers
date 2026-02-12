@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Finders Inc</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="page_center">
+    <div class="page">
+        <!-- HEADER -->
+        <header class="header">
+            <img src="car_logo.jpg" alt="Car Logo" class="logo">
+            <h1>Ideal Car</h1>
+        </header>
+
+        <!-- FORM -->
+        <form action="#" method="get">
+
+            <!-- VEHICLE DETAILS -->
+            <fieldset>
+            <legend>Vehicle Details</legend>
+
+            <label for="manufacturer">Manufacturer:</label>
+            <select name="manufacturer" id="manufacturer">
+                <option value="">Select one</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="ford">Ford</option>
+                <option value="lexus">Lexus</option>
+            </select>
+
+            <br><br>
+
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+            </fieldset>
+
+            <!-- DRIVE OPTIONS -->
+            <fieldset>
+            <legend>Drive Options</legend>
+
+            <label>
+                <input type="checkbox" name="fwd" id="fwd">
+                Front-Wheel Drive
+            </label>
+
+            <label>
+                <input type="checkbox" name="rwd" id="rwd">
+                Rear-Wheel Drive
+            </label>
+
+            <label>
+                <input type="checkbox" name="awd" id="awd">
+                All-Wheel Drive
+            </label>
+
+            <label>
+                <input type="checkbox" name="4wd" id="4wd">
+                Four-Wheel Drive
+            </label>
+            </fieldset>
+
+            <!-- LICENSE INFO -->
+            <fieldset>
+            <legend>License Information</legend>
+
+            <label for="license">Driver License Number:</label>
+            <input type="text" name="license" id="license"  pattern="[a-zA-Z]+([\s][a-zA-Z]+)*" required>
+            </fieldset>
+
+            <!-- ADDITIONAL FIELDS -->
+            <fieldset>
+            <legend>Additional Preferences</legend>
+
+            <label for="year">Preferred Model Year:</label>
+            <input type="number" name="year" id="year" placeholder="2024" >
+
+            <br><br>
+
+            <label for="fuel">Fuel Type:</label>
+            <select name="fuel" id="fuel">
+                <option value="gas">Gas</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="electric">Electric</option>
+            </select>
+            </fieldset>
+
+            <!-- COMMENTS -->
+            <fieldset>
+            <legend>Comments</legend>
+
+            <label for="comments">Additional Notes:</label><br>
+            <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
+            </fieldset>
+
+            <br>
+
+            <!-- SUBMIT -->
+            <input type="submit" value="Submit Form">
+
+        </form>
+
+    </div>
+  </div>
+</body>
+</html>

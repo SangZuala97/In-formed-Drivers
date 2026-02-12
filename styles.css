@@ -1,0 +1,57 @@
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 180px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+[required] {
+  border: 5px dashed red;
+}
+
+.page_center {
+  min-height: 100vh;         
+  display: flex;
+  align-items: center;        
+  justify-content: center;    
+  padding: 24px;             
+}
+
+.page {
+  width: 100%;
+  max-width: 900px;
+}
+
+
